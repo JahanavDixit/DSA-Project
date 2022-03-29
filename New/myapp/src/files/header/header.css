@@ -1,0 +1,43 @@
+.header {
+  background-color: rgb(236, 227, 227);
+}
+
+div.row > * {
+  text-align: center;
+}
+button {
+  border: 0px;
+  background-color: inherit;
+  padding: 10px;
+  color: inherit;
+}
+.one {
+  padding-left: 100px;
+}
+#head {
+  background-color: rgb(7, 72, 138);
+  padding-top: 50px;
+  margin-bottom: 0;
+}
+.col {
+  color: white;
+}
+.two {
+  padding-top: 10px;
+}
+#desc {
+  padding-right: 20px;
+}
+.array-bar {
+  padding: 10px;
+  width: 2px;
+  display: inline-block;
+  color: black;
+  margin: 0 1px;
+}
+.array-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  position: absolute;
+}
