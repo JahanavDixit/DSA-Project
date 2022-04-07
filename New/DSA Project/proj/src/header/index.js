@@ -5,6 +5,8 @@ import Body from '../body/index.js';
 
 import Loadanim from '../sp_function/anims.js';
 
+import {reset} from '../sp_function/Quick_sort.js';
+
 import {useState,useEffect} from 'react';
 
 const PRIMARY_COLOR = 'turquoise';
@@ -52,7 +54,7 @@ const ResetArray=() =>{
 		<span id="ch">Change the size of the Array</span>
 		<input type="range" min="10" max="50" defaultValue={25} step="1" id="range" onChange={(event)=>{setSize(Math.floor(event.target.value));ResetArray(setArr,setTemp,size)}}/>
 		</div>
-		<button id = "sort" onClick={()=>Loadanim(temp,[],[])}> Perform Quick Sort </button>
+		<button id = "sort" onClick={()=>{Loadanim(temp,[],[]);reset();}}> Perform Quick Sort </button>
 		</div>
 		<div className = "array-container">
 		{
